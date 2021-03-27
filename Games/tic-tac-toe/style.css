@@ -1,0 +1,47 @@
+/*
+Main Styles
+ */
+body {
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  body .game-wrapper {
+    width: 100%;
+    min-height: 600px;
+    background-color: #14213D;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      body .game-wrapper {
+        width: 60%; } }
+    body .game-wrapper .game-title {
+      background-color: #FFFFFF;
+      padding: 30px; }
+    body .game-wrapper .game-play-area {
+      width: 100%;
+      height: 100%; }
+      body .game-wrapper .game-play-area .game-boxes-wrapper {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px; }
+        body .game-wrapper .game-play-area .game-boxes-wrapper .box {
+          width: 33%;
+          height: 33%;
+          background-color: #FFFFFF;
+          border: 1px solid #000000; }
+    body .game-wrapper #game-result-screen {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #FCA311;
+      opacity: 0.9;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
